@@ -18,9 +18,10 @@ pipeline {
                 // Etape de sonar
             }
         }
-      stage('MVN SONARQUBE')
+      stage('MVN SONARQUBE'){
         steps {
-            mvn sonar:sonar
+            mvn sonar:sonar devops123
         }
+      }
     }
 }
