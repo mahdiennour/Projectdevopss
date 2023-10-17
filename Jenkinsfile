@@ -20,7 +20,7 @@ pipeline {
         }
       stage('MVN SONARQUBE'){
         steps {
-            sonar:sonar devops123
+            sonar:sonar -Dsonar.login=devops123
         }
       }
     }
