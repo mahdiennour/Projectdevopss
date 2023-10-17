@@ -15,6 +15,8 @@ pipeline {
 
                 // Étape de compilation du projet
                 sh "mvn compile"
+                // Etape de sonar
+                sh "mvn sonarqube"
             }
         }
     }
