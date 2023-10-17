@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Récupération du code de la branche') {
             steps {
-                sh 'git clone https://github.com/mahdiennour/Projet.git' 
+                sh 'git clone https://github.com/mahdiennour/Projetdev.git' 
             }
         }
 
