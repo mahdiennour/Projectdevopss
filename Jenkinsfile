@@ -20,7 +20,7 @@ pipeline {
         }
       stage('MVN SONARQUBE'){
         steps {
-            sh "mvn sonar:sonar -Dsonar.login=admin"
+            sh "mvn sonar:sonar -Dsonar.login=admin -Dsonar.password=devops123"
         }
       }
     }
