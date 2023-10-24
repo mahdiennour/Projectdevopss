@@ -20,7 +20,7 @@ pipeline {
         }
       stage('MVN SONARQUBE'){
         steps {
-            sh "mvn sonar:sonar -Dsonar.login=sqa_43cb0cbcc4609a8bcf9f36d6cc1f97eac8969963"
+            sh "mvn sonar:sonar -Dsonar.login=sqa_5b6ea9e8ebf6e5af8653e86abc1ea03a54d0789b"
         }
       }
         stage('mvn deploy'){
