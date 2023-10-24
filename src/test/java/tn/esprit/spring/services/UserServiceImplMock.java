@@ -6,10 +6,6 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.boot.test.context.SpringBootTest;
 
-
-@SpringBootTest
-@TestMethodOrder(OrderAnnotation.class)
-@ExtendWith(MockitoExtension.class)
 @Test
 public void testRetrieveUser() {
 Mockito.when(userRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(user));
