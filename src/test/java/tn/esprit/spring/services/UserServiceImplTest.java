@@ -12,7 +12,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 @TestMethodOrder(OrderAnnotation.class)
 class UserServiceImplTest {
-
 @Autowired
 IUserService us;
 @Test
