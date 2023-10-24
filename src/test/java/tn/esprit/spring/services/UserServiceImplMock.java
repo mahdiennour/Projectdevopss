@@ -10,6 +10,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 @TestMethodOrder(OrderAnnotation.class)
 @ExtendWith(MockitoExtension.class)
-class UserServiceImplMock {
+@Test
+public void testRetrieveUser() {
+Mockito.when(userRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(user));
+User user1 = userService.retrieveUser("2");
+Assertions.assertNotNull(user1);
 }
 
