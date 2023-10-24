@@ -10,11 +10,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 @TestMethodOrder(OrderAnnotation.class)
 @ExtendWith(MockitoExtension.class)
-@Mock
-UserRepository userRepository;
-@InjectMocks
-UserServiceImpl userService;
-
 class UserServiceImplMock {
   User user = new User("f1", "l1", new Date(), Role.ADMINISTRATEUR);
 List<User> listUsers = new ArrayList<User>() {
